@@ -86,56 +86,56 @@ coin.onload = function () {
 // coinImage.onload = function(){
 //     ctx.drawImage(coinImage, 90,130,50,60,10,10,50,60)
 // }
-// let boat = new Image();
-// boat.src = "images/fancy-boat.png";
-// boat.onload = function () {
+let boat = new Image();
+boat.src = "images/fancy-boat.png";
+boat.onload = function () {
     
-//     ctx.drawImage(boat, 110, 520, 80, 80);
-// }
-class Boat {
-    constructor(){
-        this.x = 110;
-        this.y = 520;
-        this.width = 80;
-        this.height = 80;
-        this.img = "images/fancy-boat.png";
-    }
-    drawBoat(){
-        let boatImage = new Image();
-        boatImage.src = this.img;
-        boatImage.onload = () => {
-           console.log("----", this);
-          ctx.drawImage(boatImage, this.x, this.y, this.width, this.height);
-        };
-      }
-      moveBoat(num){
-        ctx.clearRect(this.x, this.y, this.width, this.height);
-        switch(num){
-        case 38:
-            if(this.y > 10){
-            this.y -= 50;
-            }
-        break;
-        case 40:
-            if(this.y < 600){
-            this.y += 50;
-            }
-        break;
-          case 37:
-          if(this.x > 20){
-            this.x -= 10;
-          }
-            break;
-          case 39:
-          if (this.x < 430 ){
-            this.x += 10;
-          }
-            break;
-          default:
-            console.logA("What are you doping?");
-        }
-        // this.drawBoat();
+    ctx.drawImage(boat, 110, 520, 80, 80);
 }
+// class Boat {
+//     constructor(){
+//         this.x = 110;
+//         this.y = 520;
+//         this.width = 80;
+//         this.height = 80;
+//         this.img = "images/fancy-boat.png";
+//     }
+//     drawBoat(){
+//         let boatImage = new Image();
+//         boatImage.src = this.img;
+//         boatImage.onload = () => {
+//            console.log("----", this);
+//           ctx.drawImage(boatImage, this.x, this.y, this.width, this.height);
+//         };
+//       }
+//       moveBoat(num){
+//         ctx.clearRect(this.x, this.y, this.width, this.height);
+//         switch(num){
+//         case 38:
+//             if(this.y > 10){
+//             this.y -= 50;
+//             }
+//         break;
+//         case 40:
+//             if(this.y < 600){
+//             this.y += 50;
+//             }
+//         break;
+//           case 37:
+//           if(this.x > 20){
+//             this.x -= 10;
+//           }
+//             break;
+//           case 39:
+//           if (this.x < 430 ){
+//             this.x += 10;
+//           }
+//             break;
+//           default:
+//             console.logA("What are you doping?");
+//         }
+//         // this.drawBoat();
+// }
 
 
 // function boatMove(e){
@@ -158,5 +158,5 @@ class Boat {
 //         break;
 //     }
 // }
-// };
+};
 ///////////////////////////////////////////////////////////////////////////////////
