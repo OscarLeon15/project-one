@@ -162,3 +162,51 @@
 //     return that;
 // }
 // coin.render();
+/////////////////////////////////////////////////////////////////////////////////
+// class theBoatClass {
+//   constructor(){
+//     this.x = 110;
+//     this.y = 510;
+//     this.width = 80;
+//     this.height = 80;
+//     this.toLeft = function() { this.x -= 100 };
+//     this.toRight = function() { this.x += 100 };
+//     this.toUp = function() { this.y -= 100};
+//     this.toDown = function() { this.y += 100};
+//     this.initialPos = function() {this.x = 110, this.y = 520};
+//     }
+
+//     onkeydown = function(e) {
+//       switch (e.keyCode) {
+//        case 37: this.toLeft();  console.log('left',  this); break;
+//        case 39: this.toRight(); console.log('right', this); break;
+//        case 38: this.toUp();  console.log('up',  this); break;
+//        case 40: this.toDown(); console.log('down', this); break;
+//        case 32: this.initialPos(); console.log('space', this); break;
+//       }
+//       updateCanv();
+//       }
+      
+//       draw(this){
+//        let img = new Image();
+//        img.src = "../images/fancy-boat.png";
+//        img.onload = function() {
+//          ctx.drawImage(img, this.x, this.y, this.width, this.height);
+//        }
+//       }
+//       draw(theBoat);
+//       updateCanv() {
+//         ctx.clearRect(0,0,c.width,c.height);
+//         // ctx.clearRect(theBoat.x,90,theBoat.width,theBoat.height);
+//         // ctx.clearRect(theBoat.x,theBoat.y,90,80);
+//         draw(theBoat);
+//         checkLimits();
+//       }
+//       checkLimits(){
+//        if (this.x <= 2 || this.x >=930 || this.y <= 2 || this.y >= 600){
+//         this.x = 110;
+//         this.y = 520;
+//         //  alert("Please, stay in your lane!");
+//        };
+//       }
+//   };
