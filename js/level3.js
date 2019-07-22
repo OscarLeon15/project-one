@@ -62,7 +62,8 @@ x9: 310, y9: 110,
 x10: 510, y10: 110,
 x11: 710, y11: 10,//top
 x12: 710, y12: 510,
-x13: 510, y13: 110,
+x13: 710, y13: 310,
+x14: 810, y14: 210,
 width: 90,
 height: 90
 }
@@ -83,18 +84,7 @@ cloud.onload = function () {
   ctx.drawImage(cloud, theCloud.x11, theCloud.y11, theCloud.width, theCloud.height);
   ctx.drawImage(cloud, theCloud.x12, theCloud.y12, theCloud.width, theCloud.height);
   ctx.drawImage(cloud, theCloud.x13, theCloud.y13, theCloud.width, theCloud.height);
-//       ctx.drawImage(cloud, 10, 510, 90, 90);
-//       ctx.drawImage(cloud, 210, 510, 90, 90);
-//       ctx.drawImage(cloud, 310, 510, 90, 90);
-//       // 
-//       ctx.drawImage(cloud, 110, 310, 90, 90);
-//       ctx.drawImage(cloud, 210, 310, 90, 90);
-//       ctx.drawImage(cloud, 410, 310, 90, 90);
-//       ctx.drawImage(cloud, 510, 310, 90, 90);
-//       //
-//       ctx.drawImage(cloud, 110, 110, 90, 90);
-//       ctx.drawImage(cloud, 310, 110, 90, 90);
-//       ctx.drawImage(cloud, 510, 110, 90, 90);
+  ctx.drawImage(cloud, theCloud.x14, theCloud.y14, theCloud.width, theCloud.height);
 }
 }
 // the huricanes
@@ -114,7 +104,7 @@ if(theHuricane.x1 < 10){theHuricane.x1 += 1000;}
 if(theHuricane.y2 > 500){theHuricane.y2 -= 500;}
 if(theHuricane.y3 > 500){theHuricane.y3 -= 500;}
 if(theHuricane.x4 < 10){theHuricane.x4 += 1000;}
-if(theHuricane.y5 > 500){theHuricane.y5 -= 500;}
+if(theHuricane.y5 > 500){theHuricane.y5 -= 600;}
 if(theHuricane.x6 < 10){theHuricane.x6 += 1000;}
 // if(theHuricane.x1 > 720){theHuricane.x1 -= 50;}
 theHuricane.x1 -= 100;
@@ -255,7 +245,7 @@ function updateCanv() {
   moveRight();
   checkLimits();
   // moveRight();
-  drawLines();
+  // drawLines();
   // drawScore()
 }
 
@@ -402,7 +392,36 @@ if (theBoat.x < theCloud.x10 + theCloud.width && theBoat.x + theBoat.width > the
     theBoat.x = 410;
     theBoat.y = 520;
     // alert("one")
-}// end of the cloud////////////////////////////////////////////////////////////////////////////////
+}
+if (theBoat.x < theCloud.x11 + theCloud.width && theBoat.x + theBoat.width > theCloud.x11 &&
+  theBoat.y < theCloud.y11 + theCloud.height &&
+  theBoat.height + theBoat.y > theCloud.y11){
+    theBoat.x = 410;
+    theBoat.y = 520;
+    // alert("one")
+}
+if (theBoat.x < theCloud.x12 + theCloud.width && theBoat.x + theBoat.width > theCloud.x12 &&
+  theBoat.y < theCloud.y12 + theCloud.height &&
+  theBoat.height + theBoat.y > theCloud.y12){
+    theBoat.x = 410;
+    theBoat.y = 520;
+    // alert("one")
+}
+if (theBoat.x < theCloud.x13 + theCloud.width && theBoat.x + theBoat.width > theCloud.x13 &&
+  theBoat.y < theCloud.y13 + theCloud.height &&
+  theBoat.height + theBoat.y > theCloud.y13){
+    theBoat.x = 410;
+    theBoat.y = 520;
+    // alert("one")
+}
+if (theBoat.x < theCloud.x14 + theCloud.width && theBoat.x + theBoat.width > theCloud.x14 &&
+  theBoat.y < theCloud.y14 + theCloud.height &&
+  theBoat.height + theBoat.y > theCloud.y14){
+    theBoat.x = 410;
+    theBoat.y = 520;
+    // alert("one")
+}
+// end of the cloud////////////////////////////////////////////////////////////////////////////////
 if (theBoat.x < finishGoal.x1 + finishGoal.width && theBoat.x + theBoat.width > finishGoal.x1 &&
   theBoat.y < finishGoal.y1 + finishGoal.height &&
   theBoat.height + theBoat.y > finishGoal.y1){
