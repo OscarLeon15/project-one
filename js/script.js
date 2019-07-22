@@ -263,11 +263,12 @@ let theBoat = {
       // drawingLoop();
 
 
+      let coinGrabed = 0;
       function drawScore(){
         let cointCount = document.querySelector(".coin-count");
-        let coinGrabed = 0;
-        let addCoin = coinGrabed + 1;
-        cointCount.innerHTML = "Score: " + addCoin;
+        // let addCoin = coinGrabed + 1;
+        coinGrabed++;
+        cointCount.innerHTML = "Score: " + coinGrabed;
       }
       function checkLimits(){
    if (theBoat.x <= 2 || theBoat.x >=630 || theBoat.y <= 2 || theBoat.y >= 600){
