@@ -20,6 +20,21 @@ h2{
     margin: 20px 0;
     color: white;
 }
+h3{
+    height: 120px;
+    width: 120px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/life-saver2.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+h3 a{
+    color: white;
+}
 .lvl1{
     display: flex;
     justify-content: space-evenly;
