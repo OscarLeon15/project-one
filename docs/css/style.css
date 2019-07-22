@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgray;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: lightseagreen;
+}
+.finger{
+    width: 60px;
+    height: 50px;
+}
+#the-canvas-div{
+    display: flex;
+    justify-content: center;
+}
+#myCanvasLevel1{
+    background-image: url("../images/calm-dark-water.gif");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /* background-color: lightblue; */
+    border: 2px solid black;
+}
+#myCanvasLevel2{
+    background-image: url("../images/level2-water.gif");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /* background-color: lightblue; */
+    border: 2px solid black;
+}
+#myCanvasLevel3{
+    background-image: url("../images/lvl3-cloudy.gif");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /* background-color: lightblue; */
+    border: 2px solid black;
+}
+.game-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+.instructions{
+    display: flex;
+    flex-direction: column;
+    
+}
